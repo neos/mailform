@@ -1,0 +1,26 @@
+<h2>Your message to us</h2>
+<f:form action="sendMail" method="post" class="dataform">
+	<fieldset>
+		<ol>
+			<li class="required">
+				<label for="name">Your Name</label><br />
+				<f:form.textfield name="name" id="name" type="text" required="1" value="" />
+			</li>
+			<li class="required">
+				<label for="email">Your Email</label><br />
+				<f:form.textfield name="email" id="email" type="text" required="1" value="" />
+			</li>
+			<li class="required">
+				<label for="message">Your Message</label><br />
+				<f:form.textarea name="message" id="message" rows="10" cols="50" value="" />
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<ol>
+			<li>
+				<f:form.submit value="Send now" class="positive-submit" />
+			</li>
+		</ol>
+	</fieldset>
+</f:form>

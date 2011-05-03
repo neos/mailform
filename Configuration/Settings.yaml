@@ -1,0 +1,9 @@
+#                                                                        #
+# Settings                                                               #
+#                                                                        #
+
+MailForm:
+  to:
+    email: ''
+    name: ''
+  subjectPrefix: ''
