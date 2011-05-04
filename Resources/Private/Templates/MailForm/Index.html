@@ -2,20 +2,23 @@
 	<ol>
 		<li class="required b-form-row">
 			<label for="name">Your Name</label>
+			<f:render partial="PropertyErrors" arguments="{propertyName: 'name'}" />
 			<div class="b-form-inputs">
-				<f:form.textfield name="name" id="name" type="text" required="1" value="" />
+				<f:form.textfield name="name" id="name" type="text" required="1" value="{name}" />
 			</div>
 		</li>
 		<li class="required b-form-row">
 			<label for="email">Your Email</label>
+			<f:render partial="PropertyErrors" arguments="{propertyName: 'email'}" />
 			<div class="b-form-inputs">
-				<f:form.textfield name="email" id="email" type="text" required="1" value="" />
+				<f:form.textfield name="email" id="email" type="text" required="1" value="{email}" />
 			</div>
 		</li>
 		<li class="b-form-row">
 			<label for="message">Your Message</label>
+			<f:render partial="PropertyErrors" arguments="{propertyName: 'message'}" />
 			<div class="b-form-inputs">
-				<f:form.textarea name="message" id="message" rows="10" cols="50" value="" />
+				<f:form.textarea name="message" id="message" rows="10" cols="50" value="{message}" />
 			</div>
 		</li>
 		<li>

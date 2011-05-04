@@ -50,6 +50,9 @@ class MailFormController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 * @param string $name
 	 * @param string $email
 	 * @param string $message
+	 * @validate $name NotEmpty
+	 * @validate $email EmailAddress
+	 * @validate $message StringLength(minimum = 3)
 	 * @return void
 	 */
 	public function sendMailAction($name, $email, $message) {
