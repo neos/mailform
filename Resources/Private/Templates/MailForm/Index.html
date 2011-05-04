@@ -1,25 +1,27 @@
 <f:form action="sendMail" method="post" class="dataform">
-	<fieldset>
-		<ol>
-			<li class="required">
-				<label for="name">Your Name</label><br />
+	<ol>
+		<li class="required b-form-row">
+			<label for="name">Your Name</label>
+			<div class="b-form-inputs">
 				<f:form.textfield name="name" id="name" type="text" required="1" value="" />
-			</li>
-			<li class="required">
-				<label for="email">Your Email</label><br />
+			</div>
+		</li>
+		<li class="required b-form-row">
+			<label for="email">Your Email</label>
+			<div class="b-form-inputs">
 				<f:form.textfield name="email" id="email" type="text" required="1" value="" />
-			</li>
-			<li class="required">
-				<label for="message">Your Message</label><br />
+			</div>
+		</li>
+		<li class="b-form-row">
+			<label for="message">Your Message</label>
+			<div class="b-form-inputs">
 				<f:form.textarea name="message" id="message" rows="10" cols="50" value="" />
-			</li>
-		</ol>
-	</fieldset>
-	<fieldset>
-		<ol>
-			<li>
-				<f:form.submit value="Send now" class="positive-submit" />
-			</li>
-		</ol>
-	</fieldset>
+			</div>
+		</li>
+		<li>
+			<div class="b-form-inputs">
+				<f:form.submit value="Send now" class="bu" />
+			</div>
+		</li>
+	</ol>
 </f:form>
