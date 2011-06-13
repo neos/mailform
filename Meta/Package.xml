@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package xmlns="http://typo3.org/ns/2008/flow3/package">
+    <key>MailForm</key>
+    <title>MailForm</title>
+    <description>A mail form plugin for TYPO3.</description>
+    <version>1.0.0</version>
+    <state>Development</state>
+    <categories>
+        <category>Frontend</category>
+    </categories>
+    <parties>
+        <person role="LeadDeveloper">
+            <name>Karsten Dambekalns</name>
+            <email>karsten@typo3.org</email>
+            <website>typo3.org</website>
+            <organisation>TYPO3 Association</organisation>
+            <repositoryUserName>k-fish</repositoryUserName>
+        </person>
+    </parties>
+    <constraints>
+        <depends>
+            <package>SwiftMailer</package>
+        </depends>
+        <conflicts/>
+        <suggests/>
+    </constraints>
+</package>
