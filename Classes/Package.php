@@ -1,8 +1,8 @@
 <?php
-namespace F3\MailForm;
+namespace TYPO3\MailForm;
 
 /*                                                                        *
- * This script belongs to the FLOW3 framework.                            *
+ * This script belongs to the FLOW3 package "MailForm".                   *
  *                                                                        *
  * It is free software; you can redistribute it and/or modify it under    *
  * the terms of the GNU Lesser General Public License as published by the *
@@ -24,7 +24,7 @@ namespace F3\MailForm;
 /**
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  */
-class Package extends \F3\FLOW3\Package\Package {
+class Package extends \TYPO3\FLOW3\Package\Package {
 
 }
 ?>

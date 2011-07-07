@@ -2,8 +2,9 @@
 # Settings                                                               #
 #                                                                        #
 
-MailForm:
-  to:
-    email: ''
-    name: ''
-  subjectPrefix: ''
+TYPO3:
+  MailForm:
+    to:
+      email: ''
+      name: ''
+    subjectPrefix: ''

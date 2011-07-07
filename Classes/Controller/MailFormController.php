@@ -1,5 +1,5 @@
 <?php
-namespace F3\MailForm\Controller;
+namespace TYPO3\MailForm\Controller;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "MailForm".                   *
@@ -24,7 +24,7 @@ namespace F3\MailForm\Controller;
 /**
  * MailForm controller for the MailForm package
  */
-class MailFormController extends \F3\FLOW3\MVC\Controller\ActionController {
+class MailFormController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
 
 	/**
 	 * @var array
@@ -55,7 +55,7 @@ class MailFormController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 * @return void
 	 */
 	public function sendMailAction($name, $email, $message) {
-		$mail = new \F3\SwiftMailer\Message();
+		$mail = new \TYPO3\SwiftMailer\Message();
 		$mail
 			->setFrom(array($email => $name))
 			->setTo(array($this->settings['to']['email'] => $this->settings['to']['name']))

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <package xmlns="http://typo3.org/ns/2008/flow3/package">
-    <key>MailForm</key>
+    <key>TYPO3.MailForm</key>
     <title>MailForm</title>
     <description>A mail form plugin for TYPO3.</description>
     <version>1.0.0</version>
@@ -19,7 +19,7 @@
     </parties>
     <constraints>
         <depends>
-            <package>SwiftMailer</package>
+            <package>TYPO3.SwiftMailer</package>
         </depends>
         <conflicts/>
         <suggests/>

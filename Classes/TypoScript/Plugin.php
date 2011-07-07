@@ -1,5 +1,5 @@
 <?php
-namespace F3\MailForm\TypoScript;
+namespace TYPO3\MailForm\TypoScript;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "MailForm".                   *
@@ -26,9 +26,9 @@ namespace F3\MailForm\TypoScript;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  * @scope prototype
  */
-class Plugin extends \F3\TYPO3\TypoScript\Plugin {
+class Plugin extends \TYPO3\TYPO3\TypoScript\Plugin {
 
-	protected $package = 'MailForm';
+	protected $package = 'TYPO3.MailForm';
 	protected $controller = 'MailForm';
 	protected $action = 'index';
 
