@@ -3,7 +3,7 @@
 		<div class="error">
 			<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
 				<f:for each="{errors}" as="error">
-					<p class="error"><strong>{error.message}</strong></p>
+					<p class="error"><strong>{error}</strong></p>
 				</f:for>
 			</f:for>
 		</div>
