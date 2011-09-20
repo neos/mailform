@@ -8,3 +8,9 @@ TYPO3:
       email: ''
       name: ''
     subjectPrefix: ''
+
+  TYPO3CR:
+    contentTypes:
+      'TYPO3.MailForm:Plugin':
+        superTypes: ['TYPO3.TYPO3:Plugin']
+        label: 'Mail Form'
