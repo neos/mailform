@@ -14,3 +14,4 @@ TYPO3:
       'TYPO3.MailForm:Plugin':
         superTypes: ['TYPO3.TYPO3:Plugin']
         label: 'Mail Form'
+        group: 'Plugins'
