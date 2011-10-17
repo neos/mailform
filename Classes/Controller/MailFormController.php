@@ -21,6 +21,8 @@ namespace TYPO3\MailForm\Controller;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
+use TYPO3\FLOW3\Annotations as FLOW3;
+
 /**
  * MailForm controller for the MailForm package
  */
@@ -49,9 +51,9 @@ class MailFormController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
 	 * @param string $name
 	 * @param string $email
 	 * @param string $message
-	 * @validate $name NotEmpty
-	 * @validate $email EmailAddress
-	 * @validate $message StringLength(minimum = 3)
+	 * @FLOW3\Validate("$name", type="NotEmpty")
+	 * @FLOW3\Validate("$email", type="EmailAddress")
+	 * @FLOW3\Validate("$message", type="StringLength", options={ "minimum"=3 })
 	 * @return void
 	 */
 	public function sendMailAction($name, $email, $message) {

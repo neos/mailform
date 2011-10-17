@@ -21,10 +21,12 @@ namespace TYPO3\MailForm\TypoScript;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
+use TYPO3\FLOW3\Annotations as FLOW3;
+
 /**
  *
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- * @scope prototype
+ * @FLOW3\Scope("prototype")
  */
 class Plugin extends \TYPO3\TYPO3\TypoScript\Plugin {
 
