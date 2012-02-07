@@ -3,7 +3,7 @@
     <key>TYPO3.MailForm</key>
     <title>MailForm</title>
     <description>A mail form plugin for TYPO3.</description>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <state>Development</state>
     <categories>
         <category>Frontend</category>

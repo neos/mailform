@@ -1,10 +1,8 @@
 <f:form.validationResults for="{propertyName}">
 	<f:if condition="{validationResults.flattenedErrors}">
 		<div class="error">
-			<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
-				<f:for each="{errors}" as="error">
-					<p class="error"><strong>{error}</strong></p>
-				</f:for>
+			<f:for each="{validationResults.errors}" as="error">
+				<p class="error">{error -> f:translate(id: error.code, arguments: error.arguments, package: 'TYPO3.FLOW3', source: 'ValidationErrors')}</p>
 			</f:for>
 		</div>
 	</f:if>
