@@ -3,16 +3,20 @@
 	<file original="" product-name="TYPO3.MailForm" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="from.name" xml:space="preserve">
-				<source>Ihr Name</source>
+				<source>Your name</source>
+				<target>Ihr Name</target>
 			</trans-unit>
 			<trans-unit id="from.email" xml:space="preserve">
-				<source>Ihre E-Mail-Adresse</source>
+				<source>Your email address</source>
+				<target>Ihre E-Mail-Adresse</target>
 			</trans-unit>
 			<trans-unit id="message" xml:space="preserve">
-				<source>Ihre Nachricht</source>
+				<source>Your message</source>
+				<target>Ihre Nachricht</target>
 			</trans-unit>
 			<trans-unit id="result.sent" xml:space="preserve">
-				<source>Ihre E-Mail wurde verschickt. Vielen Dank!</source>
+				<source>Your email has been sent. Thank you!</source>
+				<target>Ihre E-Mail wurde verschickt. Vielen Dank!</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -1,14 +1,14 @@
 <f:form action="sendMail" method="post" class="b-form">
 	<ol>
 		<li class="required b-form-row">
-			<label for="name"><f:translate id="sender.name">Your Name</f:translate></label>
+			<label for="name"><f:translate id="from.name">Your Name</f:translate></label>
 			<f:render partial="PropertyErrors" arguments="{propertyName: 'name'}" />
 			<div class="b-form-inputs">
 				<f:form.textfield name="name" id="name" type="text" required="1" value="{name}" />
 			</div>
 		</li>
 		<li class="required b-form-row">
-			<label for="email"><f:translate id="sender.email">Your Email</f:translate></label>
+			<label for="email"><f:translate id="from.email">Your Email</f:translate></label>
 			<f:render partial="PropertyErrors" arguments="{propertyName: 'email'}" />
 			<div class="b-form-inputs">
 				<f:form.textfield name="email" id="email" type="text" required="1" value="{email}" />
