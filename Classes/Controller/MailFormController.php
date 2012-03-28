@@ -16,7 +16,7 @@ use TYPO3\FLOW3\Annotations as FLOW3;
 /**
  * MailForm controller for the MailForm package
  */
-class MailFormController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
+class MailFormController extends \TYPO3\FLOW3\Mvc\Controller\ActionController {
 
 	/**
 	 * @var array
