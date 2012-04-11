@@ -1,0 +1,6 @@
+prototype(TYPO3.MailForm:Plugin) < prototype(TYPO3.TYPO3:PluginRenderer)
+prototype(TYPO3.MailForm:Plugin) {
+	package = 'TYPO3.MailForm'
+	controller = 'MailForm'
+	action = 'index'
+}
