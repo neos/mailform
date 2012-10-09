@@ -14,7 +14,7 @@ namespace TYPO3\MailForm;
 /**
  * The TYPO3.MailForm package
  */
-class Package extends \TYPO3\FLOW3\Package\Package {
+class Package extends \TYPO3\Flow\Package\Package {
 
 }
 ?>

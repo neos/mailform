@@ -2,7 +2,7 @@
 	<f:if condition="{validationResults.flattenedErrors}">
 		<div class="error">
 			<f:for each="{validationResults.errors}" as="error">
-				<p class="error">{error -> f:translate(id: error.code, arguments: error.arguments, package: 'TYPO3.FLOW3', source: 'ValidationErrors')}</p>
+				<p class="error">{error -> f:translate(id: error.code, arguments: error.arguments, package: 'TYPO3.Flow', source: 'ValidationErrors')}</p>
 			</f:for>
 		</div>
 	</f:if>
