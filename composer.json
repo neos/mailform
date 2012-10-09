@@ -1,0 +1,1 @@
+{"name":"typo3\/mailform","type":"typo3-flow-package","description":"A mail form plugin for TYPO3.","version":"1.1.0","require":{"typo3\/flow":"*"},"autoload":{"psr-0":{"TYPO3\\MailForm":"Classes"}}}
