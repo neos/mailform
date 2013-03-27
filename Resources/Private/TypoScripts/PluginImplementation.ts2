@@ -1,4 +1,4 @@
-prototype(TYPO3.MailForm:Plugin) < prototype(TYPO3.Neos.ContentTypes:Plugin)
+prototype(TYPO3.MailForm:Plugin) < prototype(TYPO3.Neos.NodeTypes:Plugin)
 prototype(TYPO3.MailForm:Plugin) {
 	package = 'TYPO3.MailForm'
 	controller = 'MailForm'
