@@ -1,5 +1,5 @@
 'TYPO3.MailForm:Plugin':
-  superTypes: ['TYPO3.Neos.NodeTypes:Plugin']
+  superTypes: ['TYPO3.Neos:Plugin']
   ui:
     label: 'Mail Form'
     group: 'Plugins'
