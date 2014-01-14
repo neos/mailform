@@ -1,0 +1,12 @@
+#                                                                        #
+# Security policy for the TYPO3.MailForm package                         #
+#                                                                        #
+
+resources:
+  methods:
+    TYPO3_MailForm_Public: 'method(TYPO3\MailForm\Controller\MailFormController->(index|sendMail|sentMail)Action())'
+
+acls:
+  Everybody:
+    methods:
+      TYPO3_MailForm_Public: GRANT
