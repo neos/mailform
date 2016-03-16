@@ -12,11 +12,13 @@ namespace TYPO3\MailForm\Controller;
  *                                                                        */
 
 use TYPO3\Flow\Annotations as Flow;
+use TYPO3\Flow\Mvc\Controller\ActionController;
+use TYPO3\SwiftMailer\Message;
 
 /**
  * MailForm controller for the MailForm package
  */
-class MailFormController extends \TYPO3\Flow\Mvc\Controller\ActionController {
+class MailFormController extends ActionController {
 
 	/**
 	 * @var array
@@ -47,13 +49,13 @@ class MailFormController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	 * @return void
 	 */
 	public function sendMailAction($name, $email, $message) {
-		$mail = new \TYPO3\SwiftMailer\Message();
+		$mail = new Message();
 		$mail
 			->setFrom(array($email => $name))
 			->setTo(array($this->settings['to']['email'] => $this->settings['to']['name']))
 			->setSubject($this->settings['subjectPrefix'] . current(explode(PHP_EOL, $message)))
-			->setBody($message)
-			->send();
+			->setBody($message);
+		$mail->send();
 		$this->redirect('sentMail');
 	}
 
@@ -64,5 +66,3 @@ class MailFormController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	}
 
 }
-
-?>
