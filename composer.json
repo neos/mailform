@@ -1,11 +1,11 @@
 {
     "name": "typo3/mailform",
     "type": "typo3-flow-plugin",
-    "description": "A mail form plugin for TYPO3 Neos",
+    "description": "A mail form plugin for Neos",
+		"license": "LGPL-3.0",
     "require": {
-        "typo3/flow": "*",
-        "typo3/neos": "*",
-        "typo3/swiftmailer": "*"
+        "typo3/neos": "~2.0",
+        "typo3/swiftmailer": "~5.3"
     },
     "autoload": {
         "psr-0": {
