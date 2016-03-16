@@ -1,7 +1,7 @@
 
 'TYPO3.MailForm:Plugin':
   superTypes:
-    - 'TYPO3.Neos:Plugin'
+    'TYPO3.Neos:Plugin': true
   ui:
     label: 'Mail Form'
     group: Plugins
